@@ -12,3 +12,24 @@
 body {
   font-family: custom;
 }
+.custom-animate {
+  animation: updown linear infinite alternate 2s;
+  transform: translateY(0px);
+  /* transition: transform 2s; */
+  position: relative;
+  transform: rotate(45deg);
+}
+@keyframes updown {
+  0% {
+    top: 0px;
+  }
+  100% {
+    top: -5px;
+  }
+}
+.main-div-img {
+  perspective: 600px;
+}
+.projectimg {
+  transform: rotateX(20deg);
+}
